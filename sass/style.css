@@ -72,8 +72,7 @@ h3 {
 }
 
 /* Localisation */
-
-.local {
+.localisation {
     display: flex;
     justify-content: center;
     background-color: rgb(243, 243, 243);
@@ -82,31 +81,31 @@ h3 {
     padding: 1.25rem 1rem;
 }
 
-.local__text {
+.localisation__text {
     font-weight: 700;
 }
 
-.local__icon{
+.localisation__icon{
     margin-right: 1rem;
   }
 
 /* Presentation */
-.hero {
+.presentation {
     text-align: center;
     background-color: rgb(250, 250, 250);
     padding: 2rem;
 }
 
-.hero__title {
+.presentation__title {
     margin: 0px;
 }
 
-.hero__subtitle {
+.presentation__subtitle {
     font-weight: 300;
     margin: 1.5rem 0px;
 }
 
-.hero__btn {
+.presentation__btn {
     font-weight: 500;
     font-size: 1.1rem;
     color: rgb(255, 255, 255);
@@ -124,15 +123,15 @@ h3 {
 }
 
 /* Fonctionnement */
-.tuto {
+.fonctionnement {
     padding: 2rem 1rem;
 }
 
-.tuto__title {
+.fonctionnement__title {
     margin-top: 0px;
 }
 
-.tuto__step {
+.fonctionnement__step {
     box-shadow: rgba(0, 0, 0, 0.125) 0.25rem 0.25rem 0.5rem;
     background-color: rgb(246, 246, 246);
     display: flex;
@@ -142,27 +141,27 @@ h3 {
     border-radius: 1.25rem;
 }
 
-.tuto__step:first-child {
+.fonctionnement__step:first-child {
     margin-top: 0px;
 }
 
 @media (min-width: 64rem){
-.tuto__step:first-child 
+.fonctionnement__step:first-child 
     margin-left: 0.75rem;
 }
 
 @media (min-width: 64rem) {
-.tuto__step {
+.fonctionnement__step {
     flex: 1 1 0%;
     margin: 0px 0px 0px 2rem;
 }
 
 @media (min-width: 64rem) {
-.tuto__steps {
+.fonctionnement__steps {
     display: flex;
 }
 
-.tuto__step::before {
+.fonctionnement__step::before {
     counter-increment: compteListe 1;
     content: counter(compteListe) " ";
     height: 1.5rem;
@@ -177,7 +176,7 @@ h3 {
     border-radius: 100px;
 }
 
-.tuto__icon {
+.fonctionnement__icon {
     margin-right: 1rem;
     color: rgb(126, 126, 126);
 }
@@ -266,14 +265,14 @@ img {
 
 .footer__logo {
     color: rgb(255, 255, 255);
-    font-family: Shrikhand, "cursive";
+    font-family: "Shrikhand", "cursive";
     font-size: 1.2rem;
     margin: 0px 0px 1rem;
 }
 
 .footer__list {
     list-style: none;
-    margin: 0;
+    margin: 15px;
     padding: 0;
   }
   
