@@ -1,0 +1,29 @@
+.fonctionnement {
+    padding: 2rem;
+  }
+  
+  .fonctionnement__title {
+    margin-bottom: 1rem;
+  }
+  
+  .fonctionnement__step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .fonctionnement__icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .fonctionnement__description {
+    flex: 1;
+  }
+  
+  .fonctionnement__image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+  
