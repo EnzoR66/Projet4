@@ -1,0 +1,54 @@
+#content .fonctionnement {
+    padding: 2rem 1rem;
+  }
+  
+  #content .fonctionnement .container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: ListCount;
+  }
+  
+  #content .fonctionnement .container ul li {
+    padding: 1.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    background: #f6f6f6;
+    border-radius: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-shadow: .25rem .25rem .5rem #00000022;
+            box-shadow: .25rem .25rem .5rem #00000022;
+  }
+  
+  #content .fonctionnement .container ul li::before {
+    counter-increment: ListCount 1;
+    content: counter(ListCount);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 5rem;
+    background: #9356DC;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -.75rem;
+  }
+  
+  #content .fonctionnement .container ul li i {
+    margin-right: 1rem;
+    color: #7e7e7e;
+  }
+  
+  #content .fonctionnement .container ul li span {
+    color: #000;
+    font-weight: 400;
+  }

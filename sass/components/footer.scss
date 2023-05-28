@@ -1,0 +1,41 @@
+footer {
+    padding: 1rem;
+    background: #383838;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  footer .omf__text {
+    font-family: 'Shrikhand', "cursive";
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+    color: #fff;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin: .5rem 0;
+    
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer ul li a i {
+    width: 1.2rem;
+    margin-right: .5rem;
+  }
