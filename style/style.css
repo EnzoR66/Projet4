@@ -116,6 +116,13 @@
   }
   
   header a .arrow__back {
+    left: 2rem;
+    width: 2rem;
+    height: 2rem;
+    color: #000;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,18 +132,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    left: 2rem;
-    width: 2rem;
-    height: 2rem;
-    color: #000;
-    font-size: 1.3rem;
-    position: absolute;
-    top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   
-  .bg__image {
+  .back_image {
     max-width: 100%;
     max-height: 32rem;
     width: 100%;
@@ -233,12 +233,12 @@
   }
   
   #content .fonctionnement .container ul li::before {
+    background: #9356DC;
     counter-increment: ListCount 1;
     content: counter(ListCount);
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 5rem;
-    background: #9356DC;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -265,7 +265,7 @@
 
 
 
-/* Resataurants */
+/* Restaurants */
   #content .restaurants {
     background: #f6f6f6;
     padding: 2rem 1rem;
@@ -282,33 +282,33 @@
   }
   
   #content .restaurants .container .cards .card {
+    -webkit-box-shadow: .25rem .25rem .5rem #00000012;
+    box-shadow: .25rem .25rem .5rem #00000012;
     background: #fff;
     border-radius: 1rem;
     position: relative;
     display: block;
     margin: 0.5rem 0;
-    -webkit-box-shadow: .25rem .25rem .5rem #00000012;
-            box-shadow: .25rem .25rem .5rem #00000012;
   }
   
   #content .restaurants .container .cards .card img {
-    width: 100%;
-    height: 12rem;
-    border-radius: 1rem 1rem 0 0;
     -webkit-box-shadow: none;
             box-shadow: none;
     -o-object-fit: cover;
        object-fit: cover;
+    width: 100%;
+    height: 12rem;
+    border-radius: 1rem 1rem 0 0;
   }
   
   #content .restaurants .container .cards .card .card__badge--new {
+    top: 1rem;
+    right: .75rem;
     background: #99e1cf;
     color: #138668;
     padding: .5rem;
     border-radius: .125rem;
     position: absolute;
-    top: 1rem;
-    right: .75rem;
   }
   
   #content .restaurants .container .cards .card .card__footer {
@@ -383,7 +383,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
@@ -398,6 +398,7 @@
   
   footer ul {
     list-style: none;
+    
   }
   
   footer ul li {
@@ -410,8 +411,8 @@
   }
   
   footer ul li a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
   }
   
   footer ul li a i {
@@ -444,13 +445,38 @@
       width: 75%;
     }
     .restaurants .container .cards {
+      -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 2rem;
       display: -ms-grid !important;
       display: grid !important;
-      -ms-grid-columns: (1fr)[2];
-          grid-template-columns: repeat(2, 1fr);
-      -webkit-column-gap: 2rem;
-              column-gap: 2rem;
-      row-gap: 2rem;
     }
+      footer {
+        text-align: right;
+      }
     
-  }
+      footer ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 200px;
+        margin-bottom: 15px;
+      }
+    
+      footer ul li {
+        margin: 0 0 0 1rem;
+      }
+    
+      footer ul li:first-child {
+        margin-left: 0;
+      }
+      footer .omf__text {
+        font-family: 'Shrikhand', "cursive";
+        font-size: 1.2rem;
+        margin: 2rem 0 1rem;
+        color: #fff;
+        margin-right: 25px;
+        transform: translateY(40px);
+      }
+}

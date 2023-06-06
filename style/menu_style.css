@@ -1,0 +1,317 @@
+/* Page Menu */
+.menu {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background: #f6f6f6;
+  z-index: 1000;
+  position: relative;
+}
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          padding: 1rem 2rem 0 1rem;
+          }
+
+.menu__header h2 {
+  font-family: Shrikhand,"cursive";
+  margin: 1.2rem 0;
+  text-align: center;
+  margin-right: 1rem;
+  width: 100%;  
+}
+
+
+.menu__header .card__heart {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+  background: transparent; 
+}
+
+.menu__header .card__heart i {
+  font-size: 1.8em;
+  position: absolute;
+}
+
+.menu__header .card__heart i:hover {
+  opacity: 0;
+}
+
+.menu__header .card__heart .heart__color {
+  opacity: 0;
+}
+
+.menu__header .card__heart .heart__color:hover {
+  opacity: 1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu .menu__cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .menu__cards .menu__card {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.menu .menu__cards .menu__card h3 {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: .5rem;
+  font-weight: 400;
+  margin: 1.2rem 0;
+}
+
+.menu .menu__cards .menu__card h3:after {
+  content: "";
+  background: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3rem;
+  height: .25rem;
+}
+
+.menu .menu__cards .menu__card .menu__item {
+  background: #fff;
+  border-radius: .75rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0.25rem 0.25rem 1rem #0000001a;
+          box-shadow: 0.25rem 0.25rem 1rem #0000001a;
+  overflow: hidden;
+  margin: 1rem 0;
+  cursor: pointer;
+  max-width: 100%;
+  -webkit-animation: checkMenu .6s;
+          animation: checkMenu .6s;
+  -webkit-animation-timing-function: cubic-bezier(0.67, 0.22, 0.35, 0.86);
+          animation-timing-function: cubic-bezier(0.67, 0.22, 0.35, 0.86);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.menu .menu__cards .menu__card .menu__item--text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.menu .menu__cards .menu__card .menu__item--text h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu .menu__cards .menu__card .menu__item--text p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu .menu__cards .menu__card .menu__item--price {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: .5rem;
+}
+
+.menu .menu__cards .menu__card .menu__item--validation {
+  background: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.menu .menu__cards .menu__card .menu__item--icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.menu .menu__cards .menu__card .menu__item--icon i {
+  color: #99e2d0;
+}
+
+.menu .menu__cards .menu__card .menu__item:hover .menu__item--validation {
+  margin-right: -1rem;
+}
+
+.menu .menu__cards .menu__card .menu__item:hover .menu__item--icon {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.menu .menu__cards .menu__card .delay-0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.menu .menu__cards .menu__card .delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.menu .menu__cards .menu__card .delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.menu .menu__cards .menu__card .delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.menu .menu__cards .menu__card .delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.menu .menu__cards .menu__card .delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.menu .menu__cards .menu__card .delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.menu .menu__cards .menu__card .delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.menu .menu__cards .menu__card .delay-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.menu .btn__cards {
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .btn__cards .btn__buy {
+  padding: .75rem 1.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .25s;
+  transition: .25s;
+  -webkit-box-shadow: .25rem .25rem 10px #00000045;
+          box-shadow: .25rem .25rem 10px #00000045;
+  border-radius: 5rem;
+  background: #686868 -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  font-weight: 500;
+  font-weight: 400;
+}
+
+.menu .btn__cards .btn__buy:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px #000000c9;
+          box-shadow: 0.25rem 0.25rem 10px #000000c9;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    width: 70%;
+    margin: -4rem auto 0 auto;
+  }
+}
+
+@-webkit-keyframes checkMenu {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes checkMenu {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+
