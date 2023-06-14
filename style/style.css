@@ -445,7 +445,7 @@
       width: 75%;
     }
     .restaurants .container .cards {
-      -ms-grid-columns: (1fr)[2];
+      -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
